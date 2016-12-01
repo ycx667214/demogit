@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>demo</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src='js/fastclick.js'></script>
+    <script>
+        if ('addEventListener' in document) {
+            document.addEventListener('DOMContentLoaded', function() {
+                FastClick.attach(document.body);
+            }, false);
+        }
+    </script>
+</head>
+<body>
+<!-- =include header.html -->
+<div class="icons">
+    <ul>
+        <li class="li1" id="li1" onclick="changePic(this);"></li>
+        <li class="li2" id="li2" onclick="changePic(this);"></li>
+        
+    </ul>
+    <p>点击图标切换图片</p>
+</div>
+<div class="pics"></div>
+<input type="button" value="button" onclick="clickPic();">
+</body>
+<!-- build:js js/all.js -->
+<script src="js/index.js"></script>
+<script src="js/button.js"></script>
+<!-- endbuild -->
+<script src="js/inline.js" inline></script>
+</html>
